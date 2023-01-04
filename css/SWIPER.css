@@ -1,0 +1,126 @@
+
+
+.swiper {
+    width: 50%;
+    height: 100%;
+}
+.swiper-wrapper {
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 100px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.slide__css img {
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: black;
+    transition: all 0.4s ease-in-out;
+    margin: 0 ;
+    opacity: 100%;
+    display: block;
+    top: 39%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.swiper-button-prev:focus {
+    color: black;
+}
+.swiper-button-next:focus {
+    color: black;
+}
+.swiper-button-prev:hover {
+    transform: scale(125%);
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(125%);
+    -moz-transform: scale(125%);
+    -ms-transform: scale(125%);
+    -o-transform: scale(125%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.swiper-button-next:hover {
+    transform: scale(125%);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(125%);
+    -moz-transform: scale(125%);
+    -ms-transform: scale(125%);
+    -o-transform: scale(125%);
+}
+.swiper-pagination-current, .swiper-pagination-total {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+.swiper-pagination {
+    bottom: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+       right: 10px;
+    }
+    .swiper-button-prev {
+        left: 10px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .swiper {
+        width: 65%;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 5px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 5px;
+    }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .swiper {
+        width: 80%;
+    }
+    .swiper.expand {
+        transform: scale(125%);
+        -webkit-transform: scale(125%);
+        -moz-transform: scale(125%);
+        -ms-transform: scale(125%);
+        -o-transform: scale(125%);
+    }
+    .swiper-button-prev, .swiper-button-next {
+        top: 30%;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: -5px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: -5px;
+    }
+    
+    /* По идее это должно работать на мобилке */
+    .swiper-button-next:after, .swiper-button-prev:after {
+        display: none;
+    }
+
+}

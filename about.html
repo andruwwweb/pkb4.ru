@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-query__index.css">
+    <link rel="stylesheet" href="./fonts/lato.css">
+</head>
+<body>
+<!--***********************************************************************-->
+    <header class="header"> <!-- ХЕДЕР -->
+        <div class="container">
+            <a class="burger" id="burger"><img src="./css/images/icon-burger.svg" alt=""></a>
+
+            <div class="header__search col-12"> 
+                <div class="header-form">
+                    <form action="#" class="header-search__form">
+                        <input type="text">
+                        <button>
+                            <img src="./css/images/icon-search.svg" alt="">
+                        </button>
+                    </form>
+                    <img class="close-search" src="./css/images/icon-cross.svg" alt="Закрыть">
+                </div>
+
+
+
+                <img class="header__item header-search-show-string" src="./css/images/search.svg" alt="Поиск">
+                <div class="header__item header-lang">EN</div>
+            </div>
+            <nav class="nav col-10" id="nav"> <!-- НАВИГАЦИЯ -->
+
+                <a href="index.html"
+                    class="nav__logo"><img src="./css/images/logo-main.svg" alt="Логотип">
+                </a>
+
+                <a href="excursions.html"
+                    class="nav__item">Экскурсии
+                </a>
+
+                <a href="#"
+                    class="nav__item" id="open__modal">Коллекции
+                </a>
+
+                <a href="#"
+                    class="nav__item" id="open__modal-history">Истории
+                </a>
+
+                <a href="#" 
+                    class="nav__item nav__item-mod" id="open__modal-about">О нас
+                </a>
+
+            </nav>
+            <!-- Модальные окна для десктопных версий -->
+
+            <!-- <div class="modal-box"> Запасной блок для экскурсий
+                <div class="modal__container" id="close__modal">
+                    <div class="modal__container-inner" id="modal">
+                        <a class="modal__item" href="#">Text</a>
+                        <a class="modal__item" href="#">Text</a> 
+                        <a class="modal__item" href="#">Text</a>
+                        <a class="modal__item" href="#">Text</a>
+                        <a class="modal__item" href="#">Text</a>
+                        <a class="modal__item" href="#">Text</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="modal-box"> <!-- Коллекции -->
+                <div class="modal__container" id="close__modal">
+                    <div class="modal__container-inner" id="modal">
+                        <a class="modal__item" href="collections.html#collections-point">Документы</a>
+                        <a class="modal__item" href="collections.html#collections-point">Фотографии</a>
+                        <a class="modal__item" href="collections.html#collections-point">Art Brut</a>
+                        <a class="modal__item" href="collections.html#collections-point">Экспонаты</a>
+                        <a class="modal__item" href="collections.html#collections-point">Живопись и графика</a>
+                        <a class="modal__item" href="collections.html#collections-point">Книги и журналы</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-box-history"> <!-- Истории -->
+                <div class="modal__container-history" id="close__modal-history">
+                    <div class="modal__container-inner-history" id="modal-history">
+                        <a class="modal__item" href="#">Экспонаты</a>
+                        <a class="modal__item" href="#">Истории</a>
+                        <a class="modal__item" href="#">Маршруты</a>
+                        <a class="modal__item" href="#">Книги</a>
+                        <a class="modal__item" href="#">Документы</a>
+                        <a class="modal__item" href="#">Новости</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-box-about"> <!-- О нас -->
+                <div class="modal__container-about" id="close__modal-about">
+                    <div class="modal__container-inner-about" id="modal-about">
+                        <a class="modal__item" href="#">О музее</a>
+                        <a class="modal__item" href="#">Миссия</a>
+                        <a class="modal__item" href="#">История</a>
+                        <a class="modal__item" href="#">Сотрудники</a>
+                        <a class="modal__item" href="#">Контакты</a>
+                        <a class="modal__item modal__item-mod" href="#">Стать исследователем</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Кнопка "меню" для мобильной версии -->
+        <div class="burger-box" id="burger-menu">
+            <div class="burger-menu">
+
+                <div class="header__search header__search-mod col-12"> 
+                    <div class="header-form header-form-mod">
+                        <form action="#" class="header-search__form">
+                            <input type="text">
+                            <button>
+                                <img src="./css/images/icon-search.svg" alt="">
+                            </button>
+                        </form>
+                        <img class="close-search close-search-mod"src="./css/images/icon-cross.svg" alt="Закрыть">
+                    </div>
+                    
+                    <img class="header__item header-search-show-string header-search-show-string-mod" src="./css/images/search.svg" alt="Поиск">
+                    <div class="header__item header-lang header-lang-mod">EN</div>
+                </div>
+
+                <ul>
+                    <li id="excursions"><a href="excursions.html">Экскурсии</a> </li>
+
+                    <li id="collections">Коллекции <img src="./css/images/openitem.svg" alt=""></li>
+                    <div class="collections-inner" id="coll-inn">
+                        <a class="burger-item" href="doc-description.html">Документы</a>
+                        <a class="burger-item" href="collections.html#collections">Фотографии</a>
+                        <a class="burger-item" href="collections.html#collections">Art Brut</a>
+                        <a class="burger-item" href="collections.html#collections">Экспонаты</a>
+                        <a class="burger-item" href="collections.html#collections">Живопись и графика</a>
+                        <a class="burger-item" href="collections.html#collections">Книги и журналы</a>
+                    </div>
+
+                    <li id="history">Истории <img src="./css/images/openitem.svg" alt=""></li>
+                    <div class="history-inner" id="hist-inn">
+                        <a class="burger-item" href="#">Экспонаты</a>
+                        <a class="burger-item" href="#">Истории</a>
+                        <a class="burger-item" href="#">Маршруты</a>
+                        <a class="burger-item" href="#">Книги</a>
+                        <a class="burger-item" href="#">Документы</a>
+                        <a class="burger-item" href="#">Новости</a>
+                    </div>
+
+                    <li id="aboutus">O нас <img src="./css/images/openitem.svg" alt=""></li>
+                    <div class="aboutus-inner" id="about-inn">
+                        <a class="burger-item" href="#">О музее</a>
+                        <a class="burger-item" href="#">Миссия</a>
+                        <a class="burger-item" href="#">История</a>
+                        <a class="burger-item" href="#">Сотрудники</a>
+                        <a class="burger-item" href="#">Контакты</a>
+                    </div>
+                </ul>
+            </div>
+            <div id="closeBurger"><img src="./css/images/icon-cross.svg" alt=""></div>
+        </div>
+    <!---------------------------------------->
+    </header>
+<!--***********************************************************************-->
+    <div class="container">
+        <div class="about__museum col-6">
+            <h1 class="about__head">О музее</h1>
+            <p class="about__text about__text1">Музей Преображенской психиатрической больницы им. В.А. Гиляровского – музей, посвященный истории психиатрии и психическому здоровью. Музей находится в историческом здании Преображенской психиатрической больницы, построенном в 1808 году по проекту губернского архитектора Ивана Селихова. Сегодня здание больницы сохранило тот вид, который оно имело более двухсот лет назад при открытии. 
+            Музей является подразделением Психиатрической клинической больницы№ 4 им. П.Б. Ганнушкина.
+            При Музее работает архив и библиотека. 
+            </p>
+        </div>
+
+        <div class="about__mission col-6">
+            <h2 class="about__head">Миссия</h2>
+            <p class="about__text about__text2">Наша цель – рассказывать о прошлом и настоящем психиатрии, свободно говорить о ментальном здоровье и открыть коллекцию музея для самой широкой аудитории.</p>
+        </div>
+        <div class="about__storie col-6">
+            <h3 class="about__head">История</h3>
+            <p class="about__text about__text3">Преображенская психиатрическая больница – одно из старейших российских учреждений для лечения и ухода за людьми с ментальными расстройствами. 
+                История этого учреждения может рассказать историю психиатрии в нашей стране с начала XIX века. Возникнув как дом умалишенных в 1808 году, в 1838-м учреждение становится Преображенской больницей для душевнобольных, постепенно превращаясь в полноценное лечебное заведение. С Преображенской больницей связаны ключевые нововведения в терапии психических расстройств: внедрение системы нестеснения (non-restraint) и режима открытых дверей в конце 1880-х годов, системы патронажа в 1900-е годы, открытие одного из первых дневных стационаров, первые опыты применения биологической терапии в 1930-е годы и нейролептиков в 1950-е. Здесь работали основатели выдающиеся российские и советские психиатры: А.У. Фрезе, С.И. Штейнберг, С.С. Корсаков, В.Р. Буцке, Н.Н. Баженов, В.А. Гиляровский. 
+                После революции, в 1919 году больница была переименована в 1-ю городскую психиатрическую больницу. В 1951 году больница меняет нумерацию и становится 3-й психиатрической. В 1978 году учреждению было присвоено имя выдающегося психиатра Василия Алексеевича Гиляровского (1875-1959), работавшего ординатором больницы в 1911-1920 годах. В 2017 г. учреждение стало филиалом Психиатрической клинической больницы №4 им. П.Б. Ганнушкина.
+                Официальной датой основания Музея Преображенской психиатрической больницы считается 1970 год. Однако работа над его созданием велась по крайней мере с 1965 года, когда была была создана инициативная рабочая группа для организации музея во главе с заместителем главного врача П.И. Снегиревым. Должность первого заведующего музеем в 1973 году занял сотрудник больницы С.Д. Душейко, который и разработал первый проект экспозиции. В 2000–2019 гг. должность заведующей музея занимала заведующая патологоанатомическим отделением больницы Н.Т. Хохрина. С 2019 года в музее работают два штатных сотрудника.
+                </p>
+        </div>
+        <div class="about__flex col-8">
+
+            <div class="flex__item1">
+                <img src="./css/images/about-flex1.jpg" alt="Изображение">
+            </div>
+            <div class="flex__item2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare scelerisque sed euismod tristique orci. Nunc tempor velit nullam dolor, ullamcorper euismod sem.
+                Ut scelerisque feugiat enim id dui porta vitae maecenas tincidunt. Egestas nullam fringilla egestas mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. O
+            </div>
+        </div>
+
+        <div class="about__flex col-8">
+            <div class="flex__item2 flex__item2-mod">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare scelerisque sed euismod tristique orci. Nunc tempor velit nullam dolor, ullamcorper euismod sem.
+                Ut scelerisque feugiat enim id dui porta vitae maecenas tincidunt. Egestas nullam fringilla egestas mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. O
+            </div>
+            <div class="flex__item1">
+                <img src="./css/images/about-flex2.jpg" alt="Изображение">
+            </div>
+        </div>
+
+        <div class="about__simple-text col-8">
+            <p class="simple-text__inner">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare scelerisque sed euismod tristique orci. Nunc tempor velit nullam dolor, ullamcorper euismod sem. Ut scelerisque feugiat enim id dui porta vitae maecenas tincidunt. Egestas nullam fringilla egestas mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare scelerisque sed euismod tristique orci. Nunc tempor velit nullam dolor, ullamcorper euismod sem. Ut scelerisque feugiat enim id dui porta vitae maecenas tincidunt. Egestas nullam fringilla egestas mauris.
+            </p>
+        </div>
+
+        <div class="about__storie about__storie-exp col-6">
+            <h3 class="about__head">Экспозиция</h3>
+            <p class="about__text about__text3">Экспозиция музея состоит из двух музейных комнат и мемориального кабинета  Василия Алексеевича Гиляровского (1876 - 1959), имя которого носит музей.  Основная экспозиция была создана в 1970-1980-е годы, часть стендов была обновлена к двухсотлетнему юбилею больницы в 2008 году. В состав экспозиции входят следующие отделы: истории Преображенской психиатрической больницы; истории трудовой терапии; отдел творчества пациентов. 
+            Сейчас ведется работа над разработкой новой экспозиции.
+            </p>
+        </div>
+
+        <div class="about__images-container col-12">
+            <img src="./css/images/exp1.jpg" alt="">
+            <img src="./css/images/exp2.jpg" alt="">
+            <img src="./css/images/ext3-4.jpg" alt="">
+            <img src="./css/images/ext3-4.jpg" alt="">
+            <img src="./css/images/ext3-4.jpg" alt="">
+            <img src="./css/images/exp6.jpg" alt="">
+            <img src="./css/images/exp7-8.jpg" alt="">
+            <img src="./css/images/exp7-8.jpg" alt="">
+        </div>
+
+        <div class="about__emlpoyeers-container col-10">
+
+            <h5 class="about__head">Сотрудники</h5>
+
+            <div class="employeers__flex">
+
+                <div class="employeer__box">
+                    <img src="./css/images/emloyeer.jpg" alt="">
+                    <div class="employeer__name">Имя</div>
+                </div>
+                <div class="employeer__box">
+                    <img src="./css/images/emloyeer.jpg" alt="">
+                    <div class="employeer__name">Имя</div>
+                </div>
+                <div class="employeer__box">
+                    <img src="./css/images/emloyeer.jpg" alt="">
+                    <div class="employeer__name">Имя</div>
+                </div>
+                <div class="employeer__box">
+                    <img src="./css/images/emloyeer.jpg" alt="">
+                    <div class="employeer__name">Имя</div>
+                </div>
+                <div class="employeer__box">
+                    <img src="./css/images/emloyeer.jpg" alt="">
+                    <div class="employeer__name">Имя</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class= "about__reserch col-12" id="research">
+            <div class="research__head">Стать исследователем</div>
+            <div class="research__text">Вы можете принять участие в описании и оцифровке нашей коллекции как волонтер. Для этого напишите нам<a class="mailto_research" href="mailto:museum.pkb4@gmail.com"> на почту.</a></div>
+        </div>
+        <div class="about__find-container col-12" id="contacts">
+            <p class="about__find">Как нас найти</p>
+        </div>
+        <div class="map__container col-12">
+            <div class="map__info">
+                <h3>Россия, 107076, Москва, ул. Матросская Тишина 20 <br>
+                <a href="+74952680416">+7(495)268-0416</a></h3>
+                <p>От ст. метрот "Сокольники", "Преображенска", трамвай 7, автобус 716, троллейбус 32, 41, до остановки "Депо Русакова", "Матросский Мост". </p>
+                <p>Вход бесплатный. Для посещения необходима предварительная запись по телефону или email:</p>
+                <p><a href="+74952680416">+7(495)268-0416</a> <br> <a href="mailto:museum.pkb4@gmail.com">museum.pkb4@gmail.com</a></p>
+            </div>
+            <div id="map" class="map"></div>
+        </div>
+    </div>
+<!--***********************************************************************-->
+    <!--***********************************************************************-->
+    <footer class="footer"> <!-- ФУТЕР -->
+        <div class="footer-modal" id="footer-modal">
+            <form action="#" class="footer-form">
+                <input type="email" placeholder="email" class="footer-input">
+                <button>Подписаться на рассылку</button>
+                <div id="close__footer-modal">
+                    <img src="./css/images/icon-cross-black.svg" alt="">
+                </div>
+            </form>
+        </div>
+        <div class="container personal-footer__container">
+            <div class="footer__container col-10">
+
+                <div class="footer__text"> <!-- ЛЕВАЯ ЧАСТЬ -->
+
+                    <div class="text__adress"><!-- ОБЩАЯ ИНФОРМАЦИЯ В ФУТЕРЕ -->
+
+                        <div class="text__adres-inner">Россия, 107076, Москва, ул. <br> Матросская Тишина, 20 <br>
+                        <a class="footer_phone-number" href="+74952680416">+7 (495) 268-0416</a>
+                        </div>
+
+                        <div class="text__logo">
+                            <a href="https://www.pkb4.ru/">
+                                <img class="text__img" src="./css/images/footer-icon.svg" alt="Логопит">
+                            </a>
+                            <p class="text__name">ГБУЗ "ПКБ № 4 ДЗМ" </p>
+                        </div>
+
+                    </div>
+
+                    <div class="text__nav-1"> <!-- КНОПКИ НАВИГАЦИИ -->
+                        <a class="item__nav-1 nav-1__mod" href="excursions.html">Экскурсии</a>
+
+                        <a class="item__nav-1" href="collections.html">Коллекции</a>
+
+                        <a class="item__nav-1" href="stories.html">Истории</a>
+                    </div>
+                    <div class="text__nav-2">
+
+                        <a class="item__nav-2  nav-2__mod" href="about.html#contacts">Контакты</a>
+
+                        <a class="item__nav-2" href="about.html#research">Стать волонтером</a>
+
+                        <a class="item__nav-2" href="about.html">О нас</a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__buttons"> <!-- ПРАВАЯ ЧАСТЬ -->
+
+                    <form class="footer__row">
+                        <input type="email" class="footer__follow" placeholder="Подписаться на рассылку">
+
+                        <button class="footer__follow-button">Подписаться</button>
+                    </form>
+
+
+                    <a id="footer-button-mobile">
+                        Подписаться
+                    </a>
+
+
+
+                    <div class="footer__icons">
+
+                        <a class="footer__icon-item icon-1" href="https://www.tripadvisor.ru/Attraction_Review-g298484-d21259765-ReviewsMuzey_Preobrazhenskoy_bolnitsy-Moscow_Central_Russia.html">
+                            <img src="./css/images/icon1.svg" alt="TripAdviser">
+                        </a>
+
+                        <a class="footer__icon-item" href="https://t.me/preobrazhenskyhospital">
+                            <img src="./css/images/icon2.svg" alt="Telegramm">
+                        </a>
+                        
+                        <a class="footer__icon-item" href="https://vk.com/preobrazhenskymuseum">
+                            <img src="./css/images/icon3.png" alt="VK">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./JS-scripts/modal.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./JS-scripts/map.js"></script>
+</body>

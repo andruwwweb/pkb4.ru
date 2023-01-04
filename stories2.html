@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Истории</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-query__index.css">
+    <link rel="stylesheet" href="./fonts/lato.css">
+</head>
+ <body> <!-- ИСТОРИИ ВЕРСТКА -->
+<!--***********************************************************************-->
+<header class="header"> <!-- ХЕДЕР -->
+    <div class="container">
+        <a class="burger" id="burger"><img src="./css/images/icon-burger.svg" alt=""></a>
+
+        <div class="header__search col-12"> 
+            <div class="header-form">
+                <form action="#" class="header-search__form">
+                    <input type="text">
+                    <button>
+                        <img src="./css/images/icon-search.svg" alt="">
+                    </button>
+                </form>
+                <img class="close-search" src="./css/images/icon-cross.svg" alt="Закрыть">
+            </div>
+
+
+
+            <img class="header__item header-search-show-string" src="./css/images/search.svg" alt="Поиск">
+            <div class="header__item header-lang">EN</div>
+        </div>
+        <nav class="nav col-10" id="nav"> <!-- НАВИГАЦИЯ -->
+
+            <a href="index.html"
+                class="nav__logo"><img src="./css/images/logo-main.svg" alt="Логотип">
+            </a>
+
+            <a href="excursions.html"
+                class="nav__item">Экскурсии
+            </a>
+
+            <a href="#"
+                class="nav__item" id="open__modal">Коллекции
+            </a>
+
+            <a href="#"
+                class="nav__item" id="open__modal-history">Истории
+            </a>
+
+            <a href="#" 
+                class="nav__item nav__item-mod" id="open__modal-about">О нас
+            </a>
+
+        </nav>
+        <!-- Модальные окна для десктопных версий -->
+
+        <!-- <div class="modal-box"> Запасной блок для экскурсий
+            <div class="modal__container" id="close__modal">
+                <div class="modal__container-inner" id="modal">
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a> 
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="modal-box"> <!-- Коллекции -->
+            <div class="modal__container" id="close__modal">
+                <div class="modal__container-inner" id="modal">
+                    <a class="modal__item" href="collections.html#collections-point">Документы</a>
+                    <a class="modal__item" href="collections.html#collections-point">Фотографии</a>
+                    <a class="modal__item" href="collections.html#collections-point">Art Brut</a>
+                    <a class="modal__item" href="collections.html#collections-point">Экспонаты</a>
+                    <a class="modal__item" href="collections.html#collections-point">Живопись и графика</a>
+                    <a class="modal__item" href="collections.html#collections-point">Книги и журналы</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-box-history"> <!-- Истории -->
+            <div class="modal__container-history" id="close__modal-history">
+                <div class="modal__container-inner-history" id="modal-history">
+                    <a class="modal__item" href="#">Экспонаты</a>
+                    <a class="modal__item" href="#">Истории</a>
+                    <a class="modal__item" href="#">Маршруты</a>
+                    <a class="modal__item" href="#">Книги</a>
+                    <a class="modal__item" href="#">Документы</a>
+                    <a class="modal__item" href="#">Новости</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-box-about"> <!-- О нас -->
+            <div class="modal__container-about" id="close__modal-about">
+                <div class="modal__container-inner-about" id="modal-about">
+                    <a class="modal__item" href="#">О музее</a>
+                    <a class="modal__item" href="#">Миссия</a>
+                    <a class="modal__item" href="#">История</a>
+                    <a class="modal__item" href="#">Сотрудники</a>
+                    <a class="modal__item" href="#">Контакты</a>
+                    <a class="modal__item modal__item-mod" href="#">Стать исследователем</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Кнопка "меню" для мобильной версии -->
+    <div class="burger-box" id="burger-menu">
+        <div class="burger-menu">
+
+            <div class="header__search header__search-mod col-12"> 
+                <div class="header-form header-form-mod">
+                    <form action="#" class="header-search__form">
+                        <input type="text">
+                        <button>
+                            <img src="./css/images/icon-search.svg" alt="">
+                        </button>
+                    </form>
+                    <img class="close-search close-search-mod"src="./css/images/icon-cross.svg" alt="Закрыть">
+                </div>
+                
+                <img class="header__item header-search-show-string header-search-show-string-mod" src="./css/images/search.svg" alt="Поиск">
+                <div class="header__item header-lang header-lang-mod">EN</div>
+            </div>
+
+            <ul>
+                <li id="excursions"><a href="excursions.html">Экскурсии</a> </li>
+
+                <li id="collections">Коллекции <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="collections-inner" id="coll-inn">
+                    <a class="burger-item" href="doc-description.html">Документы</a>
+                    <a class="burger-item" href="collections.html#collections">Фотографии</a>
+                    <a class="burger-item" href="collections.html#collections">Art Brut</a>
+                    <a class="burger-item" href="collections.html#collections">Экспонаты</a>
+                    <a class="burger-item" href="collections.html#collections">Живопись и графика</a>
+                    <a class="burger-item" href="collections.html#collections">Книги и журналы</a>
+                </div>
+
+                <li id="history">Истории <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="history-inner" id="hist-inn">
+                    <a class="burger-item" href="#">Экспонаты</a>
+                    <a class="burger-item" href="#">Истории</a>
+                    <a class="burger-item" href="#">Маршруты</a>
+                    <a class="burger-item" href="#">Книги</a>
+                    <a class="burger-item" href="#">Документы</a>
+                    <a class="burger-item" href="#">Новости</a>
+                </div>
+
+                <li id="aboutus">O нас <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="aboutus-inner" id="about-inn">
+                    <a class="burger-item" href="#">О музее</a>
+                    <a class="burger-item" href="#">Миссия</a>
+                    <a class="burger-item" href="#">История</a>
+                    <a class="burger-item" href="#">Сотрудники</a>
+                    <a class="burger-item" href="#">Контакты</a>
+                </div>
+            </ul>
+        </div>
+        <div id="closeBurger"><img src="./css/images/icon-cross.svg" alt=""></div>
+    </div>
+    <!---------------------------------------->
+</header>
+<!--***********************************************************************-->
+
+<!--****************************** ГЛАВНАЯ *********************************-->
+    <div class="container">
+        <div class="str2-main__screen col-12">
+            <div class="str2-main__content col-8">
+
+                <div class="str2-container__exponats">Экспонаты</div>
+                <h1 class="str2-contrainer__h1">История психиатрии в 10 предметах</h1>
+                <span class="str2-container__author">Текст Михаила Погорелова</span>
+                <p class="str2-container__text">Вводный текст. К каждому предмету текст на 250-500 слов – коротко об историческом контексте, конкретно о данном предмете и что он рассказывает об истории психиатрии.</p>
+                <p class="str2-container__date">1 июля 2022</p>
+
+            </div>
+        </div>
+<!--***********************************************************************-->
+
+<!--****************************** Цепи *********************************-->
+        <div class="str2-type1__box col-8">
+            <h1 class="str2-type1__header">Цепи</h1>
+            <div class="type1__flex-container">
+
+                <div class="str2-type1__text mod-for-type1">Оригинал этих цепей был найден в сундуке в приюте Ханвелл в Мидлсексе в 1930 году. Такая одежда ограничивала движения психически больных пациентов, которые считались склонными к насилию. Они повсеместно использовались до конца 1700-х годов, когда постепенно начали внедрять более гуманные методы лечения. 
+                </div>
+
+                <div class="str2-type1__image">
+                    <div class="type1__img"><img src="./css/images/chains-image.jpg" alt="Цепи"></div>
+                    <div class="type1__text">Копия цепей для психических больных конца XVIII в. Англия, 1930-1940 | Музей науки в Лондоне</div>
+                </div>
+
+            </div>
+        </div>
+<!--********************************************************************-->
+
+<!--****************************** РУБАШКА *****************************-->
+
+        <div class="str2-tshirt__box col-8">
+            <h2 class="str2-tshirt__head">Смирительная рубашка</h2>
+            <div class="tshirt__flex-container">
+
+                <div class="str2-tshirt__text">Эта смирительная рубашка, сделанная из тяжелого холста, удерживала пациентов в психиатрических больницах с 1930-х по 1960-е годы. Такая одежда ограничивала движения пациентов, которых считали буйными. В 20 веке смирительная рубашка постепенно исчезает из арсенала психиатрии – не в последнюю очередь благодаря введению медикаментов. 
+                </div>
+
+                <div class="str2-tshirt__img">
+                    <div class="tshirt__img"><img src="./css/images/tshirt-image.jpg" alt="Смирительная рубашка"></div>
+                    <div class="tshirt__text">Смирительная рубашка. Лондон, Англия (1930-1960-е гг.)
+                    Музей науки в Лондоне </div>
+                </div>
+
+            </div>
+        </div>
+<!--********************************************************************-->
+
+<!--*********************** ИСТОРИЯ БОЛЕЗНИ ****************************-->
+        <div class="str2-illnes__box col-6">
+            <h3 class="str2-illnes__head">История болезни</h3>
+            <p class="str2-ilness__description">Тут будет текст про роль истории болезни для развития психиатрии.
+            </p>
+            <div class="str2-ilness__image">
+                <img src="./css/images/str2-ilness-image.jpg" alt="История болезнт">
+            </div>
+            <p class="str2-ilness__text">История болезни. Психиатрическая клиника 1-го Московского медицинского института (1939) | Музей Преображенской психиатрической больницы</p>
+            <div class="str2-line">
+                <img src="./css/images/str2-line.svg" alt="Line">
+            </div>
+        </div>
+<!--********************************************************************-->
+
+<!--************************ ПЛАН БОЛЬНИЦЫ *****************************-->
+        <div class="str2-plan__box col-10">
+            <h4 class="str2-plan__head">План больницы</h4>
+            <div class="plan__flex-container">
+
+                <div class="str2-plan__img">
+                    <div class="plan__img">
+                        <img src="./css/images/building-plan-image.jpg" alt="План больницы">
+                    </div>
+                    <div class="plan__text">План Бродмурской психиатрической больницы (1885) | Wellcome Collection
+                    </div>
+                </div>
+
+                <div class="str2-plan__text">Тут будет текст про роль архитектуры больниц для развития психиатрии. 
+                </div>
+
+            </div>
+        </div>
+<!--***********************************************************************-->
+
+<!--******************************* ВАННА *********************************-->
+        <div class="str2-type3__box col-6">
+            <h5 class="str2-type3__head">Ванна</h5>
+            <p class="str2-type3__description">Тут будет текст про роль водолечения в истории психиатриию
+            </p>
+            <div class="str2-type3__image">
+                <img src="./css/images/str2-bath.jpg" alt="Ванна">
+            </div>
+            <p class="str2-type3__text">Ванна. 1-я Московская психиатрическая больница (1930-е гг.) Музей Преображенской психиатрической больницы</p>
+        </div>
+<!--********************************************************************-->
+
+<!--*************************** КРОВАТЬ ********************************-->
+        <div class="str2-type2__box col-12">
+            <h6 class="str2-type2__head">Кровать</h6>
+            <div class="type2__flex-container">
+
+                <div class="str2-type2__img">
+                    <div class="type2__img">
+                        <img src="./css/images/str2-bed-image.jpg" alt="Кровать">
+                    </div>
+                    <div class="type2__text">Больничная палата. 1-я Московская психиатрическая больница (1930-е гг.)
+                        Музей Преображенской психиатрической больницы
+                    </div>
+                </div>
+
+                <div class="str2-type2__text">Кровать становится неотъемлемой частью больниц в XVIII веке. Больница, палата (отделение) и кровать становятся основными единицами измерения медицинсуой помощи. Кровать была символом больничной жизни и терапии; болезнь = кровать, то есть признание психически больного настоящим больным. Способ контроля и дисциплинирования – закрепление за пациентом конкретного пространства в отделении. Способ организации порядка – тут пример с переполненными отделениями, которые сразу привносят хаос. 
+                </div>
+
+            </div>
+        </div>
+<!--***********************************************************************-->
+
+
+<!--******************************** ШПРИЦЫ *******************************-->
+
+        <div class="str2-type1__box col-8">
+            <h2 class="str2-type1__header">Шприцы</h2>
+            <div class="type1__flex-container">
+
+                <div class="str2-type1__text">Тут текст про шприцы.
+                </div>
+
+                <div class="str2-type1__img">
+                    <div class="type1__img"><img src="./css/images/str2-spritz-image.jpg" alt="Шприц"></div>
+                    <div class="type1__text">Шприц. Лондон (1930-е гг.) | Музей науки в Лондоне</div>
+                </div>
+
+            </div>
+            <div class="str2-line">
+                <img src="./css/images/str2-line.svg" alt="Line">
+            </div>
+
+        </div>
+<!--********************************************************************-->
+
+<!--************************ СТРАННАЯ ХРЕНОВИНА ************************-->
+        <div class="str2-type2__box col-12">
+            <p class="str2-type2__head">Аппарат для электросудорожной терапии</p>
+            <div class="type2__flex-container">
+
+                <div class="str2-type2__img">
+                    <div class="type2__img">
+                        <img src="./css/images/str2-somethingstrange-image.jpg" alt="Аппарат для электросудорожной терапии">
+                    </div>
+                    <div class="type2__text type2__textmod">Аппарат для электросудорожной терапии | Science Museum, London
+                    </div>
+                </div>
+
+                <div class="str2-type2__text">Разработанная в Италии в 1938 году электросудорожная терапия (ЭСТ) является противоречивым психиатрическим методом лечения, в основном используемым в случаях тяжелой депрессии. Аппарат ЭСТ передает электрические токи в мозг в виде синхронизированных импульсов, вызывающих судороги или припадки, которые, как считается, "шокируют" пациента от тяжелого психического состояния. расстройства.
+                </div>
+
+            </div>
+        </div>
+<!--***********************************************************************-->
+
+<!--******************************* ПОДЕЛКИ *******************************-->
+        <div class="str2-type3__box col-6">
+            <p class="str2-type3__head">Поделки пациента</p>
+            <p class="str2-type3__description">Тут текст про трудотерапию.</p>
+
+            <div class="str2-type3__image handemade-mod__img">
+                <img src="./css/images/str2-handmade-image.jpg" alt="Поделки пациента">
+            </div>
+
+            <p class="str2-type3__text handemade-mod__text">Больничная палата. 1-я Московская психиатрическая больница (1930-е гг.) Музей Преображенской психиатрической больницы.</p>
+        </div>
+<!--************************************************************************-->
+
+<!--***************************** ТАБЛЕТКИ *********************************-->
+        <div class="str2-type2__box col-8">
+            <p class="str2-type2__head">Таблетка</p>
+            <div class="type2__flex-container">
+
+                <div class="str2-type2__img">
+                    <div class="type2__img">
+                        <img src="./css/images/str2-meds-image.jpg" alt="Таблетки">
+                    </div>
+                    <div class="type2__text type2__text-medsmod">«Ларгактил» (1971) | Музей науки в Лондоне
+                    </div>
+                </div>
+
+                <div class="str2-type2__text">Хлорпромазин (выпускаемый под торговым знаком «Largactil») - один из первых антипсихотиков, который стал массово производится в середине 1950-х годов. Хлорпромазин использовался при лечении шизофрении, купируя основные симптомы болезни и оказывая седативное действие, но при этом имел тяжелые побочные эффекты. 
+                </div>
+
+            </div>
+        </div>
+<!--*************************** ЧИТАТЬ ДАЛЬШЕ *******************************-->
+        <div class="readmore-container col-10">
+            <div class="readmore__head">Читать дальше:</div>
+            <div class="readmore-wrapper">
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore1.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore2.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore3.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore4.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore5.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore6.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore7.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+                <div class="readmore-item">
+                    <div class="readmore-inner__img"><img src="./css/images/readmore8.jpg" alt=""></div>
+                    <div class="readmore-inner__text">Заголовок материала</div>
+                </div>
+            </div>
+        </div>
+<!--***********************************************************************-->
+
+    </div> <!--** Закрывающий главный контейнер тег **-->
+
+<!--***********************************************************************-->
+    <footer class="footer"> <!-- ФУТЕР -->
+        <div class="footer-modal" id="footer-modal">
+            <form action="#" class="footer-form">
+                <input type="email" placeholder="email" class="footer-input">
+                <button>Подписаться на рассылку</button>
+                <div id="close__footer-modal">
+                    <img src="./css/images/icon-cross-black.svg" alt="">
+                </div>
+            </form>
+        </div>
+        <div class="container personal-footer__container">
+            <div class="footer__container col-10">
+
+                <div class="footer__text"> <!-- ЛЕВАЯ ЧАСТЬ -->
+
+                    <div class="text__adress"><!-- ОБЩАЯ ИНФОРМАЦИЯ В ФУТЕРЕ -->
+
+                        <div class="text__adres-inner">Россия, 107076, Москва, ул. <br> Матросская Тишина, 20 <br>
+                        <a class="footer_phone-number" href="+74952680416">+7 (495) 268-0416</a>
+                        </div>
+
+                        <div class="text__logo">
+                            <a href="https://www.pkb4.ru/">
+                                <img class="text__img" src="./css/images/footer-icon.svg" alt="Логопит">
+                            </a>
+                            <p class="text__name">ГБУЗ "ПКБ № 4 ДЗМ" </p>
+                        </div>
+
+                    </div>
+
+                    <div class="text__nav-1"> <!-- КНОПКИ НАВИГАЦИИ -->
+                        <a class="item__nav-1 nav-1__mod" href="excursions.html">Экскурсии</a>
+
+                        <a class="item__nav-1" href="collections.html">Коллекции</a>
+
+                        <a class="item__nav-1" href="stories.html">Истории</a>
+                    </div>
+                    <div class="text__nav-2">
+
+                        <a class="item__nav-2  nav-2__mod" href="about.html#contacts">Контакты</a>
+
+                        <a class="item__nav-2" href="about.html#research">Стать волонтером</a>
+
+                        <a class="item__nav-2" href="about.html">О нас</a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__buttons"> <!-- ПРАВАЯ ЧАСТЬ -->
+
+                    <form class="footer__row">
+                        <input type="email" class="footer__follow" placeholder="Подписаться на рассылку">
+
+                        <button class="footer__follow-button">Подписаться</button>
+                    </form>
+
+
+                    <a id="footer-button-mobile">
+                        Подписаться
+                    </a>
+
+
+
+                    <div class="footer__icons">
+
+                        <a class="footer__icon-item icon-1" href="https://www.tripadvisor.ru/Attraction_Review-g298484-d21259765-ReviewsMuzey_Preobrazhenskoy_bolnitsy-Moscow_Central_Russia.html">
+                            <img src="./css/images/icon1.svg" alt="TripAdviser">
+                        </a>
+
+                        <a class="footer__icon-item" href="https://t.me/preobrazhenskyhospital">
+                            <img src="./css/images/icon2.svg" alt="Telegramm">
+                        </a>
+                        
+                        <a class="footer__icon-item" href="https://vk.com/preobrazhenskymuseum">
+                            <img src="./css/images/icon3.png" alt="VK">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--***********************************************************************-->
+    <script src="./JS-scripts/modal.js"></script>
+</body>

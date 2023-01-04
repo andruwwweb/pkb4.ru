@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Истории - общая страница</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-query__index.css">
+    <link rel="stylesheet" href="./fonts/lato.css">
+</head>
+<body>
+<!--***********************************************************************-->
+<header class="header"> <!-- ХЕДЕР -->
+    <div class="container">
+        <a class="burger" id="burger"><img src="./css/images/icon-burger.svg" alt=""></a>
+
+        <div class="header__search col-12"> 
+            <div class="header-form">
+                <form action="#" class="header-search__form">
+                    <input type="text">
+                    <button>
+                        <img src="./css/images/icon-search.svg" alt="">
+                    </button>
+                </form>
+                <img class="close-search" src="./css/images/icon-cross.svg" alt="Закрыть">
+            </div>
+
+
+
+            <img class="header__item header-search-show-string" src="./css/images/search.svg" alt="Поиск">
+            <div class="header__item header-lang">EN</div>
+        </div>
+        <nav class="nav col-10" id="nav"> <!-- НАВИГАЦИЯ -->
+
+            <a href="index.html"
+                class="nav__logo"><img src="./css/images/logo-main.svg" alt="Логотип">
+            </a>
+
+            <a href="excursions.html"
+                class="nav__item">Экскурсии
+            </a>
+
+            <a href="#"
+                class="nav__item" id="open__modal">Коллекции
+            </a>
+
+            <a href="#"
+                class="nav__item" id="open__modal-history">Истории
+            </a>
+
+            <a href="#" 
+                class="nav__item nav__item-mod" id="open__modal-about">О нас
+            </a>
+
+        </nav>
+        <!-- Модальные окна для десктопных версий -->
+
+        <!-- <div class="modal-box"> Запасной блок для экскурсий
+            <div class="modal__container" id="close__modal">
+                <div class="modal__container-inner" id="modal">
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a> 
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                    <a class="modal__item" href="#">Text</a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="modal-box"> <!-- Коллекции -->
+            <div class="modal__container" id="close__modal">
+                <div class="modal__container-inner" id="modal">
+                    <a class="modal__item" href="collections.html#collections-point">Документы</a>
+                    <a class="modal__item" href="collections.html#collections-point">Фотографии</a>
+                    <a class="modal__item" href="collections.html#collections-point">Art Brut</a>
+                    <a class="modal__item" href="collections.html#collections-point">Экспонаты</a>
+                    <a class="modal__item" href="collections.html#collections-point">Живопись и графика</a>
+                    <a class="modal__item" href="collections.html#collections-point">Книги и журналы</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-box-history"> <!-- Истории -->
+            <div class="modal__container-history" id="close__modal-history">
+                <div class="modal__container-inner-history" id="modal-history">
+                    <a class="modal__item" href="#">Экспонаты</a>
+                    <a class="modal__item" href="#">Истории</a>
+                    <a class="modal__item" href="#">Маршруты</a>
+                    <a class="modal__item" href="#">Книги</a>
+                    <a class="modal__item" href="#">Документы</a>
+                    <a class="modal__item" href="#">Новости</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-box-about"> <!-- О нас -->
+            <div class="modal__container-about" id="close__modal-about">
+                <div class="modal__container-inner-about" id="modal-about">
+                    <a class="modal__item" href="#">О музее</a>
+                    <a class="modal__item" href="#">Миссия</a>
+                    <a class="modal__item" href="#">История</a>
+                    <a class="modal__item" href="#">Сотрудники</a>
+                    <a class="modal__item" href="#">Контакты</a>
+                    <a class="modal__item modal__item-mod" href="#">Стать исследователем</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Кнопка "меню" для мобильной версии -->
+    <div class="burger-box" id="burger-menu">
+        <div class="burger-menu">
+
+            <div class="header__search header__search-mod col-12"> 
+                <div class="header-form header-form-mod">
+                    <form action="#" class="header-search__form">
+                        <input type="text">
+                        <button>
+                            <img src="./css/images/icon-search.svg" alt="">
+                        </button>
+                    </form>
+                    <img class="close-search close-search-mod"src="./css/images/icon-cross.svg" alt="Закрыть">
+                </div>
+                
+                <img class="header__item header-search-show-string header-search-show-string-mod" src="./css/images/search.svg" alt="Поиск">
+                <div class="header__item header-lang header-lang-mod">EN</div>
+            </div>
+
+            <ul>
+                <li id="excursions"><a href="excursions.html">Экскурсии</a> </li>
+
+                <li id="collections">Коллекции <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="collections-inner" id="coll-inn">
+                    <a class="burger-item" href="doc-description.html">Документы</a>
+                    <a class="burger-item" href="collections.html#collections">Фотографии</a>
+                    <a class="burger-item" href="collections.html#collections">Art Brut</a>
+                    <a class="burger-item" href="collections.html#collections">Экспонаты</a>
+                    <a class="burger-item" href="collections.html#collections">Живопись и графика</a>
+                    <a class="burger-item" href="collections.html#collections">Книги и журналы</a>
+                </div>
+
+                <li id="history">Истории <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="history-inner" id="hist-inn">
+                    <a class="burger-item" href="#">Экспонаты</a>
+                    <a class="burger-item" href="#">Истории</a>
+                    <a class="burger-item" href="#">Маршруты</a>
+                    <a class="burger-item" href="#">Книги</a>
+                    <a class="burger-item" href="#">Документы</a>
+                    <a class="burger-item" href="#">Новости</a>
+                </div>
+
+                <li id="aboutus">O нас <img src="./css/images/openitem.svg" alt=""></li>
+                <div class="aboutus-inner" id="about-inn">
+                    <a class="burger-item" href="#">О музее</a>
+                    <a class="burger-item" href="#">Миссия</a>
+                    <a class="burger-item" href="#">История</a>
+                    <a class="burger-item" href="#">Сотрудники</a>
+                    <a class="burger-item" href="#">Контакты</a>
+                </div>
+            </ul>
+        </div>
+        <div id="closeBurger"><img src="./css/images/icon-cross.svg" alt=""></div>
+    </div>
+    <!---------------------------------------->
+</header>
+<!--***********************************************************************-->
+    <div class="container">
+        <!-- <div class="stories-buttons__box col-8">
+            <a href="#" class="stories-button stories-button1">Экспонаты</a>
+            <a href="#" class="stories-button stories-button2">Истории</a>
+            <a href="#" class="stories-button stories-button3">Маршруты</a>
+            <a href="#" class="stories-button stories-button4">Книги</a>
+            <a href="#" class="stories-button stories-button5">Новости</a>
+        </div> -->
+
+        <div class="stories-content__box col-10">
+            <div class="stories-image__box">
+                <img src="./css/images/str-img-main.png" alt="Ремень">
+            </div>
+            <div class="stories-text__box">
+
+                <div class="str-text__container">
+
+                    <div class="str-container__exponats">Экспонаты</div>
+                    <h1 class="str-contrainer__h1">История психиатрии в 10 предметах</h1>
+                    <span class="str-container__author">Текст Михаила Погорелова</span>
+                    <p class="str-container__text">Вводный текст. К каждому предмету текст на 250-500 слов – коротко об историческом контексте, конкретно
+                        о данном предмете и что он рассказывает об истории психиатрии.</p>
+                    <p class="str-container__date">1 июля 2022</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="stories-items__box col-10">
+            <div class="str-inner__content">
+                <img class="inner__image" src="./css/images/inner-content1.jpg" alt="">
+                <div class="inner__text inner__text1">Заголовок материала</div>
+            </div>
+            <div class="str-inner__content">
+                <img class="inner__image" src="./css/images/inner-content2.jpg" alt="">
+                <div class="inner__text inner__text2">Заголовок материала</div>
+            </div>
+            <div class="str-inner__content">
+                <img class="inner__image" src="./css/images/inner-content3.jpg" alt="">
+                <div class="inner__text inner__text3">Заголовок материала</div>
+            </div>
+            <div class="str-inner__content">
+                <img class="inner__image" src="./css/images/inner-content4.jpg" alt="">
+                <div class="inner__text inner__text4">Заголовок материала</div>
+            </div>
+        </div>
+        <div class="str-button__container col-10">
+            <a class="str__button" href="stories2.html">другие истории &rarr; </a>
+        </div>
+    </div>
+<!--***********************************************************************-->
+<!--***********************************************************************-->
+    <footer class="footer"> <!-- ФУТЕР -->
+        <div class="footer-modal" id="footer-modal">
+            <form action="#" class="footer-form">
+                <input type="email" placeholder="email" class="footer-input">
+                <button>Подписаться на рассылку</button>
+                <div id="close__footer-modal">
+                    <img src="./css/images/icon-cross-black.svg" alt="">
+                </div>
+            </form>
+        </div>
+        <div class="container personal-footer__container">
+            <div class="footer__container col-10">
+
+                <div class="footer__text"> <!-- ЛЕВАЯ ЧАСТЬ -->
+
+                    <div class="text__adress"><!-- ОБЩАЯ ИНФОРМАЦИЯ В ФУТЕРЕ -->
+
+                        <div class="text__adres-inner">Россия, 107076, Москва, ул. <br> Матросская Тишина, 20 <br>
+                        <a class="footer_phone-number" href="+74952680416">+7 (495) 268-0416</a>
+                        </div>
+
+                        <div class="text__logo">
+                            <a href="https://www.pkb4.ru/">
+                                <img class="text__img" src="./css/images/footer-icon.svg" alt="Логопит">
+                            </a>
+                            <p class="text__name">ГБУЗ "ПКБ № 4 ДЗМ" </p>
+                        </div>
+
+                    </div>
+
+                    <div class="text__nav-1"> <!-- КНОПКИ НАВИГАЦИИ -->
+                        <a class="item__nav-1 nav-1__mod" href="excursions.html">Экскурсии</a>
+
+                        <a class="item__nav-1" href="collections.html">Коллекции</a>
+
+                        <a class="item__nav-1" href="stories.html">Истории</a>
+                    </div>
+                    <div class="text__nav-2">
+
+                        <a class="item__nav-2  nav-2__mod" href="about.html#contacts">Контакты</a>
+
+                        <a class="item__nav-2" href="about.html#research">Стать волонтером</a>
+
+                        <a class="item__nav-2" href="about.html">О нас</a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__buttons"> <!-- ПРАВАЯ ЧАСТЬ -->
+
+                    <form class="footer__row">
+                        <input type="email" class="footer__follow" placeholder="Подписаться на рассылку">
+
+                        <button class="footer__follow-button">Подписаться</button>
+                    </form>
+
+
+                    <a id="footer-button-mobile">
+                        Подписаться
+                    </a>
+
+
+
+                    <div class="footer__icons">
+
+                        <a class="footer__icon-item icon-1" href="https://www.tripadvisor.ru/Attraction_Review-g298484-d21259765-ReviewsMuzey_Preobrazhenskoy_bolnitsy-Moscow_Central_Russia.html">
+                            <img src="./css/images/icon1.svg" alt="TripAdviser">
+                        </a>
+
+                        <a class="footer__icon-item" href="https://t.me/preobrazhenskyhospital">
+                            <img src="./css/images/icon2.svg" alt="Telegramm">
+                        </a>
+                        
+                        <a class="footer__icon-item" href="https://vk.com/preobrazhenskymuseum">
+                            <img src="./css/images/icon3.png" alt="VK">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./JS-scripts/modal.js"></script>
+</body>
