@@ -29,5 +29,5 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
   myMap.behaviors.disable('scrollZoom');
   myMap.controls.remove('searchControl');
-  myMap.controls.remove('RouteButton')
+  myMap.controls.remove('RouteButton');
 }

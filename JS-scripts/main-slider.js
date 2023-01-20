@@ -5,7 +5,6 @@ const buttonPrev = document.querySelector('#prev');
 
 
 sliderItems.forEach ((slide, index) => {
-    console.log(slide);
 
     if (index !== 0) {
         slide.classList.add('hidden');
